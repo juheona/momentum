@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div id="main">
+        <div class="left-main">
+            <div id="hello">
+                <h1>Hello.</h1>
+                <input class="hidden" id="logout-button" type="submit" value="Log-Out">
+            </div>
+            <div id="clock-and-weather">
+                <div id="clock" class="sub-box">
+                    <div id="date"></div>
+                    <div id="clock-wrap">
+                        <div id="hour"></div>
+                        <div id="second"></div>
+                    </div>
+                </div>
+                <div id="weather" class="sub-box">
+                    <div id="city"></div>
+                    <img>
+                    <div id="condition"></div>
+                </div>
+            </div>
+            <div id="quote-box" class="sub-box">
+                <div id="quote-wrap">
+                    <h4 id="verse"></h4>
+                    <div id="quote"></div>
+                </div>
+            </div>
+        </div>
+        <div class="right-main sub-box">
+            <div class="hidden" id="login-wrap">
+                <form id="login-form">
+                    <h2>Who are you?</h2>
+                    <input id="login-input" type="text" placeholder="What is your name?" maxlength="15" required />
+                    <input id="login-button" type="submit" value="Log-In">
+                </form>
+            </div>
+            <div class="hidden" id="wrap-to-hidden">
+                <div id="todo-wrap">
+                    <div id="todo-list-box">
+                        <h2>You have to do..</h2>
+                        <h3 class="hidden">Nothing!</h3>
+                        <div id="todo-list"></div>
+                    </div>
+                    <form id="todo-form">
+                        <input id="todo-input" type="text" size="40" placeholder="Write a To Do and Press Enter"
+                            required>
+                        <input class="hidden" type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/backgrounds.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/quotes.js"></script>
+</body>
+
+</html>

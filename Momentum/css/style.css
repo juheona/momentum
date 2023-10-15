@@ -1,0 +1,375 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    overflow-x: hidden;
+}
+
+#main {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background img {
+    filter: opacity(0.75);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 101%;
+    min-height: 101%;
+    transform: translate(-50%, -50%);
+}
+
+.sub-box {
+    background-color: rgba(255, 255, 255, 0.700);
+    border-radius: 1rem;
+}
+
+.left-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+    height: 100%;
+}
+
+#hello {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    overflow: hidden;
+    font-size: 40px;
+}
+
+#hello h1 {
+    width: 100%;
+    padding: 5% 5%;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
+#logout-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(53, 53, 53);
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+#clock-and-weather {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 35%;
+}
+
+#clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 52%;
+    padding: 4% 5%;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.800);
+}
+
+#date {
+    font-size: 45px;
+    white-space: nowrap;
+    font-weight: bold;
+    text-overflow: clip;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+#clock-wrap {
+    display: flex;
+    align-items: baseline;
+    font-weight: bolder;
+    height: 150px;
+}
+
+#hour {
+    font-size: 120px;
+    margin: 0;
+}
+
+#second {
+    font-size: 60px;
+    margin-left: 10px;
+}
+
+#weather {
+    color: rgba(0, 0, 0, 0.671);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 35px;
+    flex: 1;
+    margin-left: 2%;
+    padding: 4% 5%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+#weather img {
+    height: 40%;
+    width: auto;
+}
+
+#quote-box {
+    padding: 5%;
+    flex: 1;
+    margin-top: 2%;
+    width: 90%;
+    height: 30%;
+}
+
+#quote-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.800);
+}
+
+#verse {
+    margin: 0;
+    font-size: 35px;
+}
+
+#quote {
+    font-size: 29px;
+}
+
+.right-main {
+    width: 44%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+#login-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+
+#login-form h2 {
+    position: relative;
+    top: 2rem;
+    font-size: 60px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#login-input {
+    font-size: 35px;
+    width: 400px;
+    text-align: center;
+    background-color: inherit;
+    padding-bottom: 0.5rem;
+    border: none;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.411);
+    place-content: black;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.473);
+}
+
+#login-button {
+    position: relative;
+    bottom: 12%;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: inherit;
+    border-radius: 1rem;
+    border: 3px solid rgba(0, 0, 0, 0.50);
+    width: 410px;
+    padding: 0.8rem 0;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#wrap-to-hidden {
+    height: 100%;
+    width: 100%;
+}
+
+#todo-wrap {
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#todo-list-box {
+    display: flex;
+    flex-direction: column;
+    height: 88%;
+}
+
+#todo-list-box h2 {
+    margin: 5% 0;
+    font-size: 60px;
+}
+
+#todo-list-box h3 {
+    font-size: 80px;
+    color: gray;
+}
+
+#todo-list {
+    list-style-type: none;
+    overflow: auto;
+    flex: 1;
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    background-color: inherit;
+    border-top: 2px solid rgba(0, 0, 0, 0.459);
+    width: 98%;
+    padding: 0.7rem 0;
+    color: rgb(0, 0, 0, 0.644);
+}
+
+#todo-list li div {
+    display: flex;
+}
+
+#todo-list li:first-child {
+    border: none;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+input[type="checkbox"]::before {
+    content: "\2605";
+    color: gray;
+    visibility: visible;
+    position: relative;
+    bottom: 15%;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+input[type="checkbox"]:checked::before {
+    color: orange;
+}
+
+input[type="checkbox"]:hover::before {
+    color: gold;
+}
+
+label {
+    margin-left: 20px;
+}
+
+#todo-list button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+#todo-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+#todo-list::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.295);
+    border-radius: 1rem;
+}
+
+#todo-list::-webkit-scrollbar-track {
+    background-color: gray;
+    border-radius: 1rem;
+}
+
+#todo-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+#todo-input {
+    font-size: 25px;
+    width: 400px;
+    background-color: inherit;
+    padding-bottom: 0.5rem;
+    border: none;
+    width: 98%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.411);
+}
+
+#todo-input-button {
+    display: none;
+}
+
+@media screen and (max-width: 1550px) {
+    body {
+        align-items: start;
+    }
+
+    #main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-main {
+        width: 100%;
+    }
+
+    .right-main {
+        height: 800px;
+        width: 100%;
+        margin: 2% 0;
+    }
+}
